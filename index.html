@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description"
+    content="Ujjawal Shiv — Data Analyst portfolio showcasing projects, dashboards, and skills." />
+  <meta name="keywords" content="Data Analyst, Portfolio, SQL, Python, Power BI, Tableau, Dashboard" />
+  <title>Ujjawal Shiv — Data Analyst</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Poppins:wght@400;600&display=swap"
+    rel="stylesheet">
+
+  <!-- Icons (for simplicity using SVG sprites in CSS/HTML) -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <nav class="nav container">
+      <a class="brand" href="#home" aria-label="Home">
+        <div class="logo">US</div>
+        <span class="brand-name">Ujjawal Shiv</span>
+      </a>
+
+      <button id="nav-toggle" class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">
+        <span class="sr-only">Toggle navigation</span>
+        ☰
+      </button>
+
+      <ul id="primary-nav" class="nav-list">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#certs">Certifications</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><button id="theme-toggle" class="btn-toggle" aria-pressed="false">🌙</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO / ABOUT -->
+    <section id="home" class="hero container">
+      <div class="hero-left">
+        <h1>Hi, I’m <span class="accent">Ujjawal Shiv</span></h1>
+        <p class="lead">Data Analyst — turning raw data into actionable insights. Skilled in SQL, Python, Power BI, and
+          Tableau.</p>
+        <p class="micro">I build dashboards, run analyses, and tell stories with data to help teams make better
+          decisions.</p>
+        <p class="cta-row">
+          <a class="btn" href="#projects">View Projects</a>
+          <a class="btn ghost" href="#contact">Hire / Contact</a>
+        </p>
+
+        <ul class="quick-stats">
+          <li><strong>3+</strong> <span>Projects</span></li>
+          <li><strong>• SQL • Python</strong> <span>Core Skills</span></li>
+          <li><strong>• Power BI</strong> <span>Dashboards</span></li>
+        </ul>
+      </div>
+
+      <div class="hero-right">
+        <div class="profile-card">
+          <img src="./Image/photo 24..jpg" alt="Profile photo" class="avatar">
+          <div class="profile-info">
+            <h2>   Ujjawal Shiv</h2>
+            <!-- <p>Data Analyst • RGPV Student</p>
+            <p class="skills-line">SQL • Python • Power BI • Tableau • Excel</p> -->
+            <li>Data Analysis </li>
+            <li>SQL </li>
+            <li>Python </li>
+            <li>Power BI & Tableau </li>
+            <li>Excel </li>
+            <a href="Doc/Ujjawal_CV.pdf" class="download-resume" download>Download Resume (PDF)</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>I’m a B.Tech graduate and a data enthusiast with hands-on experience in SQL, Python, and dashboarding. I
+            enjoy
+            solving business problems by extracting insights from messy datasets and presenting them clearly to
+            stakeholders. My
+            contributions focus on analyzing complex datasets and supporting data-driven decision-making. Leveraging
+            expertise in
+            Python, SQL, and Power BI, I collaborate effectively with teams to transform data into actionable insights
+            that drive
+            organizational success. Passionate about continuous learning, I aim to use data to solve real-world problems
+            and help
+            businesses make informed decisions.</p>
+          <p>Career Goal : To become a product-focused data analyst who helps teams grow by providing actionable,
+            data-driven
+            recommendations.</p>
+
+          <!-- <h3>Core Skills</h3>
+          <p class="tagline">• SQL </p>
+          <p class="tagline">• Python (Pandas) </p>
+          <p class="tagline">• Power BI </p>
+          <p class="tagline">• Tableau </p>
+          <p class="tagline">• Excel </p>
+          <p class="tagline">• Statistics </p>
+          <p class="tagline">• Basic ML</p> -->
+        </div>
+
+        <div class="about-bullets">
+          <ul>
+            <li><strong>Education:</strong> B.Tech (AIML) Sagar Institute of Science, Technology & Research, Ratibad.
+            </li>
+            <li><strong>Major Project:</strong> Blur Face Detection (image quality enhancement using ML).</li>
+            <li><strong>Available:</strong> Freelance / Full-time or Internships.</li>
+          </ul>
+
+          <!-- <div class="contact-mini">
+            <a class="cont-info" href="mailto:youremail@example.com">ujjawalsistec00@gmail.com</a>
+            <div class="socials">
+              <a href="#" aria-label="LinkedIn">LinkedIn</a>
+              <a href="#" aria-label="GitHub">GitHub</a>
+              <a href="#" aria-label="Kaggle">Kaggle</a>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section container">
+      <h2 class="section-title">Projects</h2>
+      <p class="section-sub">3–5 Projects that demonstrate problem solving, technical skills, and business impact.
+      </p>
+
+      <div id="projects-grid" class="projects-grid" aria-live="polite">
+        <!-- Projects are injected by JavaScript from a config array. -->
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section container">
+      <h2 class="section-title">Technical Skills</h2>
+      <div class="skills-grid" id="skills-grid">
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS -->
+    <section id="certs" class="section container">
+      <h2 class="section-title">Certifications & Courses</h2>
+      <div id="certs-grid" class="certs-grid">
+        <!-- Certificates injected by JS -->
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section container">
+      <h2 class="section-title">Contact & Resume</h2>
+
+      <div class="contact-grid">
+        <div class="contact-card">
+          <h3>Get in touch</h3>
+          <p>If you'd like to discuss a role or project — send me a message.</p>
+
+          <!-- NOTE: Replace FORM_ENDPOINT with your Formspree or EmailJS endpoint -->
+          <form id="contact-form" class="contact-form" method="POST" action="#" novalidate>
+            <label>
+              <span class="sr-only">Name</span>
+              <input name="name" id="cf-name" type="text" placeholder="Your name" required>
+            </label>
+
+            <label>
+              <span class="sr-only">Email</span>
+              <input name="email" id="cf-email" type="email" placeholder="Your email" required>
+            </label>
+
+            <label>
+              <span class="sr-only">Message</span>
+              <textarea name="message" id="cf-message" rows="5" placeholder="Tell me about your need"
+                required></textarea>
+            </label>
+
+            <div class="form-actions">
+              <button type="submit" class="btn">Send Message</button>
+              <!-- <a class="btn ghost" href="Doc/Ujjawal_CV.pdf" download>Download Resume</a> -->
+            </div>
+
+            <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+
+        <div class="contact-right">
+          <h4>Profiles</h4>
+          <ul class="profile-links">
+            <li><a href="https://www.linkedin.com/in/ujjawalshiv/" target="_blank" rel="noopener"><img
+                  src="/Image/linked in.png" alt="" height="50px" width="50px"></a></li>
+            <li><a href="https://github.com/ujjawal00git" target="_blank" rel="noopener"><img src="/Image/github.jpg"
+                  alt="" height="50px" width="50px"></a></li>
+            <li><a href="https://www.instagram.com/_iamujjawal_01/?igsh=MXUyZG9ocXE5c2VidA%3D%3D#" target="_blank"
+                rel="noopener"><img src="/Image/insta.jpg" alt="" height="50px" width="50px"></a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="container">
+        <p>© <span id="year"></span> Ujjawal Shiv — Data Analyst.</p>
+      </div>
+    </footer>
+  </main>
+
+  <!-- PROJECT MODAL -->
+  <div id="project-modal" class="modal" role="dialog" aria-hidden="true" aria-labelledby="modal-title">
+    <div class="modal-panel" role="document">
+      <button id="modal-close" class="modal-close" aria-label="Close modal">✕</button>
+      <div id="modal-content"></div>
+    </div>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+
+</html>
