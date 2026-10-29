@@ -11,25 +11,94 @@
 /* -------------------- Config (Edit here) -------------------- */
 
 const PROJECTS = [
-  {
+{
     id: "proj-sales",
-    title: "Customer Sales Analysis",
-    subtitle: "Customer Buying Patterns & Revenue Analysis",
-    thumb: "./Image/CSA.png",
-    problem: "Businesses often struggle to understand customer purchasing patterns and sales performance due to scattered data. Analyzing sales data helps identify trends, improve decision-making, and optimize strategies for revenue growth.",
-    data_source: "Company CSV ",
-    tools: ["Python (Pandas)", "SQL", "Power BI"],
-    process: ["Aggregated sales & customer tables using SQL , Cleaned and normalized data with Pandas, Built interactive Power BI dashboard with filters",],
-    insights: "Top 3 regions account for ~70% sales; Repeat customers show 25% higher AOV.",
+    title: "Power BI Case Study | Loesche India Pvt. Ltd",
+    subtitle: "Power BI dashboard, EDA, Database design, SQL, Python, Data Engineering",
+    thumb: "Image\\Loesche India Pvt. Ltd.png",
+    problem: "To transform raw industrial business data into actionable insights through Python, SQL Server, and Power BI, enabling better analysis of sales, profitability, customer performance, and deliveries.",
+    data_source: "Synthetic data generated to simulate real-world industrial business scenarios.",
+    tools: ["Python (Pandas, Numpy, Faker)", "SQL", "Power BI", "MS SQL Server", "Data Engineering", "Data Modeling", "ETL Pipelines"],
+    process: [
+      "Business Understanding: Identified business requirements and key performance indicators (KPIs).",
+      "Data Generation: Created synthetic industrial business data using Python.",
+      "Data Cleaning: Cleaned, transformed, and validated data using Pandas and NumPy.",
+      "EDA: Analyzed trends, distributions, and business patterns.",
+      "SQL Server: Loaded data into fact and dimension tables and validated records.",
+      "Data Modeling: Built a star schema and relationships in Power BI.",
+      "DAX & KPIs: Created measures for sales, profit, quantity, orders, and customer performance.",
+      "Dashboard Development: Built an interactive Power BI dashboard to support data-driven decisions.",
+      "Insights & Recommendations: Derived actionable insights and provided recommendations for business improvement."
+    ],
+    insights: [
+      "Total sales are ₹10.02 billion, generating ₹4.16 billion in profit.",
+      "Jindal Steel & Power leads customer sales at approximately ₹720 million.",
+      "Direct Sales is the largest channel by total cost at ₹2.3 billion.",
+      "Existing customers contribute the largest share of orders (26.8%), followed by email enquiries (25.87%).",
+      "Revenue shown for FY 2024–25 is ₹33 billion, FY 2025–26 is ₹30 billion, and FY 2026–27 is ₹10 billion, indicating a downward trend across the displayed years. FY 2026–27 may be incomplete.",
+      "More...."],
     links: { github: "#", powerbi: "#", tableau: "#" },
     images: [
-      "./Image/CSA1.png",
-      "./Image/CSA2.png",
-      "./Image/CSA3.png"
+      "Image\\Dark Theme.png",
+      "Image\\Light Theme.png",
+      "Image\\Product Overview.png",
+      "Image\\Geographical Analysis.png",
+      "Image\\Data Model.png"
     ]
   },
   {
     id: "proj-churn",
+    title: "🌦️ Live Weather Analytics Dashboard",
+    subtitle: "Live API Integration, Data Visualization, Data modeling, power BI",
+    thumb: "Image\\Weather Dashboard.png",
+    problem: "Develop a Live Weather Forecasting Dashboard using a Weather API to visualize real-time weather conditions, temperature trends, humidity, wind speed, and future forecasts for better decision-making.",
+    data_source: "Weather API (OpenWeatherMap API)",
+    tools: ["Python", "Power BI", "API Integration", "Data Visualization", "Data Modeling"],
+    process: [
+      "Requirement Gathering – Identify business needs and KPIs",
+      "Data Collection – Gather data from Excel and OpenWeatherMap APIs",
+      "Data Cleaning (ETL) – Remove duplicates, handle missing values, and transform data using Power Query.",
+      "Data Modeling – Establish relationships between tables and create a star schema.",
+      "Dashboard Design – Choose suitable charts, tables, slicers, and KPI cards.",
+      "Validation & Testing – Verify data accuracy, calculations, and performance.",
+      "Publishing & Sharing – Publish the dashboard to Power BI Service and configure access.",
+      "Refresh & Maintenance – Configure data refresh and update the dashboard as required."
+    ],
+    insights: "This dashboard provides an overview of key business performance metrics, including total revenue, profit, sales trends, product-wise performance, sales channels, and regional analysis to help identify trends and support data-driven decisions.",
+    links: { github: "#", powerbi: "#", tableau: "#" },
+    images: ["Image\\Weather Dashboard.png"]
+  },
+  {
+    id: "proj-eda",
+    title: "Sales Data Analysis & Recommendations",
+    subtitle: "Excel based data analysis and visualization for business insights",
+    thumb: "Image\\Excel Dashboard.png",
+    problem: "Businesses often struggle to monitor sales performance, track customer behavior, and identify regional and product-wise sales trends. This project aims to develop an interactive Sales Dashboard in Excel to analyze revenue, orders, discounts, product performance, payment modes, and regional sales, enabling data-driven business decisions.",
+    data_source: "CSV file containing sales data for a retail company, including order details, customer information, product details, and sales metrics.",
+    tools: ["Power Query", "Excel", "Power Pivot Tables", "Data Visualization", "Data Analysis"],
+    process: [
+      "Data Import: Imported sales, product, and customer datasets into Excel.",
+      "Data Cleaning: Removed duplicates, handled missing values, corrected data formats, and validated data consistency.",
+      "Data Modeling: Established relationships between sales, products, and customers tables to enable integrated analysis.",
+      "KPI & Measure Calculation: Calculated Total Sales, Net Revenue, Total Orders, Average Sales, Total Customers, and Average Discount.",
+      "Dashboard Development: Created interactive charts, KPI cards, slicers, and filters to analyze sales trends, regional performance, product categories, customer segments, and order distribution.",
+      "Insights & Analysis: Identified top-performing regions, product categories, sales trends, and order statuses to support data-driven business decisions."
+    ],
+    insights:
+    [
+      "Sales Performance: Generated ₹7.8M in total sales and ₹6.99M in net revenue.",
+      "Regional Analysis: Central region contributed the highest share of sales at 23%, followed by East at 22% and North at 21%.",
+      "Order Distribution: 64% of orders were delivered, while 20% were pending and 16% were returned.",
+      "Customer Segments: Retail contributed the highest sales (₹2,961.84K), followed by SME (₹2,176.60K) and Corporate (₹1,851.18K).",
+      "Category Performance: Furniture led category-wise sales at ₹2,294.08K, followed by Office Supplies at ₹1,705.96K.",
+      "Sales Trends: Monthly sales fluctuated significantly, with a sharp decline in January 2026, indicating a period that requires further investigation.",
+      "Discount Analysis: The average discount was 10.07%, highlighting an opportunity to evaluate discounting practices and their impact on profitability."
+    ],
+    links: { github: "#", powerbi: "#", tableau: "#" },
+    images: ["Image\\Excel Dashboard.png"]
+  },
+  {
+    id: "proj-govt",
     title: "Government Sector Project",
     subtitle: "Analysis of Tax Collections & Government Schemes Across Cities",
     thumb: "./Image/Uadd.png",
@@ -45,8 +114,8 @@ const PROJECTS = [
     ]
 
   },
-  {
-    id: "proj-eda",
+    {
+    id: "proj-egaming",
     title: "E-Gaming Agency",
     subtitle: "Visualizing E-Gaming Agency & Investments",
     thumb: "./Image/EG.png",
@@ -75,9 +144,12 @@ const SKILLS = [
 
 
 const CERTIFICATES = [
-  { name: "Basic Python Programing", year: 2023, location: "./Doc/python.pdf" },
-  { name: "Data Analytics Workshoap", year: 2023, location: "./Doc/DA.pdf" },
-  { name: "Lumenore BI Tools", year: 2024, link: "./Doc/lumenore_certi.pdf" }
+  { name: "SQL (Hakkerank)", year: 2026, link: "https://www.hackerrank.com/certificates/iframe/be6f57dd1d25" },
+  { name: "Data Science & Analytics (HP)", year: 2025, link: "https://www.life-global.org/certificate/f07e5692-835f-4632-9e52-cb94a6db21b4" },
+  { name: "Lumenore BI Tools", year: 2024, link: "./Doc/lumenore_certi.pdf" },
+  { name: "Data Analytics Workshop", year: 2024, link: "./Doc/DA.pdf" },
+  { name: "Basic Python", year: 2024, link: "./Doc/python_basic certificate.pdf" },
+  { name: "Python Programming Essentials (CISCO)", year: 2024, link: "https://drive.google.com/file/d/1hB7BprlgF-WsIFEyR1wg4H1IWz_tV_Cf/view?usp=drive_link" }
 ];
 
 /* -------------------- DOM Helpers -------------------- */
@@ -234,7 +306,11 @@ function openProjectModal(id) {
         </p>
         
         <h4>Insights</h4>
-        <p>${escapeHTML(p.insights)}</p>
+        <ol>
+          ${(Array.isArray(p.insights) ? p.insights : [p.insights])
+          .map(item => `<li>${escapeHTML(item)}</li>`)
+          .join("")}
+        </ol>
 
       </div>
     </div>
